@@ -1,0 +1,99 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.jpeg');  /* Ruta de la imagen */
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    color: #ffffff; /* Texto blanco por defecto */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: rgba(28, 28, 28, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    /* El contenedor sigue siendo el mismo, no afecta el formulario */
+}
+
+/* Encabezado */
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Formulario y sus elementos */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+input::placeholder, select {
+    color: #bbbbbb;
+}
+
+/* Botón de enviar con degradado */
+button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #6A82FB, #FC5C7D); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Mensaje de agradecimiento */
+#message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333333;
+    color: #76c7c0;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
